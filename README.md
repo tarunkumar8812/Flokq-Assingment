@@ -1,9 +1,4 @@
 
-# Mckinley & Rice NodeJs Coding Challenge
-
-> Welcome to the Mckinley & Rice Coding Challenge!
-
-
 ## Overview
 
 To complete this challenge, you will need to write a  web app, and provide us the source files to be built.
@@ -19,7 +14,7 @@ Create a job queue whose workers fetch data from a URL and store the results in 
 User submits www.google.com to your endpoint.  The user gets back a job id. Your system fetches www.google.com (the result of which would be HTML) and stores the result.  The user asks for the status of the job id and if the job is complete, he gets a response that includes the HTML for www.google.com
 
 ## Solution:
-A job queue created using the Redis database and Kue, a priority job que. First, add new jobs by running:
+A job queue created using the Redis/MongoDB database and Kue, a priority job que. First, add new jobs by running:
 ```bash
 curl localhost:5000/create/www.facebook.com
 ```
